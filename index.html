@@ -60,176 +60,150 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Georgia, 'Times New Roman', serif;
+            line-height: 1.7;
+            color: #222;
+            background: #fefefe;
             min-height: 100vh;
+            margin: 0;
+            padding: 20px;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 700px;
             margin: 0 auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.95);
-            margin-top: 40px;
-            margin-bottom: 40px;
-            border-radius: 12px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 0;
+            background: #fefefe;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #eee;
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
 
         h1 {
-            font-size: 3em;
-            color: #2c3e50;
-            margin-bottom: 10px;
-            font-weight: 700;
+            font-size: 2.5em;
+            color: #222;
+            margin-bottom: 8px;
+            font-weight: 400;
+            letter-spacing: -1px;
         }
 
         .subtitle {
-            font-size: 1.2em;
-            color: #7f8c8d;
+            font-size: 1.1em;
+            color: #666;
             font-weight: 300;
+            font-style: italic;
         }
 
         .logo {
-            width: 80px;
-            height: 80px;
-            background: #e74c3c;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2em;
-            color: white;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: #666;
         }
 
         .section {
-            margin-bottom: 40px;
+            margin-bottom: 45px;
         }
 
         h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-left: 4px solid #3498db;
-            padding-left: 15px;
+            font-size: 1.4em;
+            color: #222;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9em;
         }
 
         p {
-            margin-bottom: 15px;
+            margin-bottom: 18px;
             font-size: 1.1em;
             line-height: 1.7;
         }
 
-        .highlight {
-            background: #d68910;
-            color: white;
-            padding: 20px;
-            border-radius: 8px;
-            font-weight: 500;
-            text-align: center;
-            margin: 30px 0;
-        }
-
-        .steps {
-            background: #ecf0f1;
-            padding: 25px;
-            border-radius: 8px;
+        ol {
+            padding-left: 25px;
             margin: 20px 0;
         }
 
-        .steps ol {
-            padding-left: 20px;
-        }
-
-        .steps li {
-            margin-bottom: 10px;
+        li {
+            margin-bottom: 12px;
             font-size: 1.1em;
         }
 
         .problem {
-            background: #ffebee;
-            border-left: 4px solid #e74c3c;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            margin: 30px 0;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
         }
 
         .problem summary {
             cursor: pointer;
-            margin: -20px -20px 0 -20px;
-            padding: 20px;
-            border-radius: 0 8px 0 0;
+            list-style: none;
         }
 
-        .problem summary:hover {
-            background: rgba(231, 76, 60, 0.1);
+        .problem summary::-webkit-details-marker {
+            display: none;
         }
 
         .problem summary h2 {
             display: inline;
             margin: 0;
-            border: none;
-            padding: 0;
+            color: #666;
+            font-size: 0.8em;
+        }
+
+        .problem summary:hover h2 {
+            color: #222;
         }
 
         .solution {
-            background: #e8f5e8;
-            border-left: 4px solid #27ae60;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
+            margin: 30px 0;
         }
 
         .cta {
-            background: #2980b9;
-            color: white;
-            padding: 30px;
-            text-align: center;
-            border-radius: 8px;
+            background: #f8f8f8;
+            padding: 25px;
             margin: 40px 0;
+            border-top: 2px solid #222;
+            border-bottom: 1px solid #ddd;
         }
 
         .cta h3 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
+            font-size: 1.2em;
+            margin-bottom: 12px;
+            color: #222;
+            font-weight: 600;
         }
 
         footer {
             text-align: center;
-            margin-top: 40px;
-            padding-top: 30px;
-            border-top: 1px solid #eee;
-            color: #7f8c8d;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #999;
+            font-size: 0.9em;
         }
 
         .bold {
             font-weight: 600;
-            color: #2c3e50;
+            color: #222;
         }
 
         @media (max-width: 600px) {
-            .container {
-                margin: 20px;
+            body {
                 padding: 15px;
             }
             
             h1 {
-                font-size: 2.2em;
+                font-size: 2em;
             }
             
-            .logo {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5em;
+            .container {
+                max-width: 100%;
             }
         }
     </style>
@@ -248,42 +222,36 @@
 
         <main id="main" role="main">
 
-        <div class="section">
-            <details class="problem">
-                <summary><h2>The Problem</h2></summary>
-                <p>Tipping culture has spiraled out of control. Businesses now demand tips before service is provided, creating awkward pressure and shifting wage responsibility from employers to customers.</p>
-            </details>
-        </div>
+        <details class="problem">
+            <summary><h2>The Problem</h2></summary>
+            <p>Tipping culture has spiraled out of control. Businesses now demand tips before service is provided, creating awkward pressure and shifting wage responsibility from employers to customers.</p>
+        </details>
 
-        <div class="section">
-            <div class="solution">
-                <h2>The Solution</h2>
-                <p>Rate businesses honestly, but subtract one star for tip-before-service practices. Include "TipFatigue.org" in your review to raise awareness and push back against exploitative tipping culture.</p>
-            </div>
-        </div>
+        <section>
+            <h2>The Solution</h2>
+            <p>Rate businesses honestly, but subtract one star for tip-before-service practices. Include "TipFatigue.org" in your review to raise awareness and push back against exploitative tipping culture.</p>
+        </section>
 
-        <div class="section">
+        <section>
             <h2>How to Participate</h2>
-            <div class="steps">
-                <ol>
-                    <li><span class="bold">Rate the business honestly</span> based on service and product quality</li>
-                    <li><span class="bold">Subtract one star</span> if they request tips before service</li>
-                    <li><span class="bold">Mention "TipFatigue.org"</span> in your review</li>
-                </ol>
-            </div>
-        </div>
+            <ol>
+                <li><span class="bold">Rate the business honestly</span> based on service and product quality</li>
+                <li><span class="bold">Subtract one star</span> if they request tips before service</li>
+                <li><span class="bold">Mention "TipFatigue.org"</span> in your review</li>
+            </ol>
+        </section>
 
-        <div class="section">
+        <section>
             <h2>Sample Review</h2>
-            <div class="steps">
-                <p><em>"Great coffee and friendly staff (would be 5 stars), but deducting 1 star for the tip prompt before service. Join TipFatigue.org to push back against exploitative tipping culture."</em></p>
-            </div>
-        </div>
+            <p><em>"Great coffee and friendly staff (would be 5 stars), but deducting 1 star for the tip prompt before service. Join TipFatigue.org to push back against exploitative tipping culture."</em></p>
+        </section>
 
         <div class="cta">
             <h3>Join the Movement</h3>
             <p>Share TipFatigue.org and help restore tipping to what it should be: voluntary appreciation for exceptional service.</p>
         </div>
+
+        </main>
 
         <footer>
             <p>TipFatigue.org - Fighting tip fatigue, one review at a time.</p>
